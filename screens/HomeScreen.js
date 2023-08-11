@@ -14,6 +14,7 @@ import { useNavigation } from "@react-navigation/native";
 //components
 import Header from "../components/Header";
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -31,6 +32,21 @@ const HomeScreen = () => {
         {/* catigries */}
         <Categories />
         {/* featured rows */}
+        <FeaturedRow
+          id="1"
+          title="Featured"
+          description="paid placement from our partiner"
+        />
+        <FeaturedRow
+          id="2"
+          title="Featured"
+          description="paid placement from our partiner"
+        />
+        <FeaturedRow
+          id="3"
+          title="Featured"
+          description="paid placement from our partiner"
+        />
       </ScrollView>
     </SafeAreaView>
   );
