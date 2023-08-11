@@ -13,6 +13,7 @@ import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 //components
 import Header from "../components/Header";
+import Categories from "../components/Categories";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -28,6 +29,7 @@ const HomeScreen = () => {
       {/* -------------body------------ */}
       <ScrollView>
         {/* catigries */}
+        <Categories />
         {/* featured rows */}
       </ScrollView>
     </SafeAreaView>
@@ -41,5 +43,4 @@ const Styles = StyleSheet.create({
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
-  
 });
